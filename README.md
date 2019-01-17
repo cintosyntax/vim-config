@@ -6,6 +6,13 @@ Clone the repo and run the install script:
     cd ~/.vim
     ./install
 
+Install Silver Searcher:
+```
+brew install the_silver_searcher
+```
+
+Install Xcode via Appstore
+
 # Setup MacVim + command-t
 
 I have had issues in the past when the ruby version of MacVim wasn't working
