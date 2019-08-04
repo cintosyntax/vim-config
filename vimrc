@@ -26,4 +26,7 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-set wildignore=assets/node_modules/*,_build/*,deps/*,node_modules/*
+
+set wildignore=_build/*,deps/*,*/node_modules/*,tmp/*,vendor/*
+
+au! BufNewFile,BufRead *.svelte set ft=html
