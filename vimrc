@@ -26,7 +26,13 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-
 set wildignore=_build/*,deps/*,*/node_modules/*,tmp/*,vendor/*
 
 au! BufNewFile,BufRead *.svelte set ft=html
+
+let g:rspec_runner = "os_x_iterm2"
+
+map <Leader>T :Rails <CR>
+map <Leader>t :.Rails <CR>
+
+
