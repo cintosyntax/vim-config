@@ -15,6 +15,7 @@
 
 set nocompatible
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 execute pathogen#infect()
 
 syntax on
@@ -34,5 +35,5 @@ let g:rspec_runner = "os_x_iterm2"
 
 map <Leader>T :Rails <CR>
 map <Leader>t :.Rails <CR>
-
+map <Leader>f :CtrlP <CR>
 
