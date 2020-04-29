@@ -15,12 +15,20 @@
 
 set nocompatible
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+call plug#begin('~/.vim/plugged')
+
+Plug 'mileszs/ack.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+call plug#end()
+
 execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
 
+set rtp+=/usr/local/opt/fzf
 runtime! init/**.vim
 
 if filereadable($HOME . "/.vimrc.local")
@@ -35,5 +43,5 @@ let g:rspec_runner = "os_x_iterm2"
 
 map <Leader>T :Rails <CR>
 map <Leader>t :.Rails <CR>
-map <Leader>f :CtrlP <CR>
+map <Leader>f :FZF <CR>
 
