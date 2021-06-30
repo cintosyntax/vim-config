@@ -28,3 +28,7 @@ sudo xcodebuild -license accept
 brew install --env=std vim --with-custom-ruby  --with-override-system-vi --with-lua --with-luajit --with-mzscheme --with-tcl
 brew install --env=std macvim --with-lua --with-luajit --with-python3 --HEAD
 ```
+
+# Setup Vimer
+
+To avoid `mvim .` from opening up many times. We can use [vimer](https://github.com/susam/vimer#getting-started). Folllow the instructions to install it and start using the `vimer` command instead to open up files in MacVim
